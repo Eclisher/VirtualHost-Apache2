@@ -18,3 +18,33 @@ Prerequisites
 #### Conclusion
 
 This project provides a convenient way to automate the creation of folders on an Apache2 web server using Ansible. By utilizing this playbook, you can streamline the process of setting up new directories, ensuring consistency and reducing manual effort. Feel free to customize the playbook to fit your specific needs and extend its functionality as required.
+## Installing Ansible
+
+1. Ubuntu / Debian :
+    ```sh
+    sudo apt update
+    ```
+    ```sh
+    sudo apt install ansible
+
+2. CentOS / RHEL :
+    ````sh
+    sudo yum install epel-release
+    ````
+    ````sh
+    sudo yum install ansible
+    `````
+3. Fedora :
+
+    ````sh
+    sudo dnf install ansible
+    ````
+4. MacOS (via Homebrew) :
+
+    `````sh
+    brew install ansible
+
+5. Windows (via le sous-système Windows pour Linux - WSL) :
+-  #### Make sure you have WSL installed and configured on your system.
+ - ####   Open a WSL distribution (e.g. Ubuntu) and follow the Ubuntu-specific installation steps mentioned above.    
+
