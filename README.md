@@ -48,3 +48,27 @@ This project provides a convenient way to automate the creation of folders on an
 -  #### Make sure you have WSL installed and configured on your system.
  - ####   Open a WSL distribution (e.g. Ubuntu) and follow the Ubuntu-specific installation steps mentioned above.    
 
+# Here is the apache configuration if we want to start  the `api.hei.com` ,  `front.hei.com` , `back.hei.com`
+<VirtualHost *:80>
+    ServerName api.school.com
+    DocumentRoot /var/www/api.school.com
+
+    ErrorLog ${APACHE_LOG_DIR}/api_error.log
+    CustomLog ${APACHE_LOG_DIR}/api_access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName front.hei.school
+    DocumentRoot /var/www/front.hei.school
+
+    ErrorLog ${APACHE_LOG_DIR}/front_error.log
+    CustomLog ${APACHE_LOG_DIR}/front_access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName back.hei.school
+    DocumentRoot /var/www/back.hei.school
+
+    ErrorLog ${APACHE_LOG_DIR}/back_error.log
+    CustomLog ${APACHE_LOG_DIR}/back_access.log combined
+</VirtualHost>
